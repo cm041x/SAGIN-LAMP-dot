@@ -1,0 +1,15 @@
+name: ChickenPox
+val_split: 0.1
+test_split: 0.1
+
+default:
+  seed: 42
+  criterion: MSE
+  epochs: 1000
+  patience: 50
+  min_delta: 0.0001
+  batch_size: 16
+  N_REINIT: 10
+  metrics:
+    - MSE
+    - MAE

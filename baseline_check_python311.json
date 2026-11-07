@@ -1,0 +1,35 @@
+{
+  "python_version": "3.11.5",
+  "flight_model_loaded": true,
+  "offload_model_loaded": true,
+  "inference_success": true,
+  "warnings": [],
+  "torch_version": "2.5.1",
+  "torch_geometric_version": "2.6.1",
+  "state_shape": [
+    4,
+    3,
+    15,
+    15
+  ],
+  "graph_nodes": 8,
+  "graph_edges": 24,
+  "graph_node_types": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "flight_output_shape": [
+    1,
+    8
+  ],
+  "offload_output_shape": [
+    4,
+    5
+  ]
+}

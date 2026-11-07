@@ -1,0 +1,13 @@
+name: as-733
+
+default:
+  seed: 4756387
+  criterion: BinaryClassificationLoss
+  epochs: 1000
+  patience: 50
+  min_delta: 0.0001
+  N_REINIT: 5
+  batch_size: 32
+  metrics:
+    - F1
+    - RocAuc

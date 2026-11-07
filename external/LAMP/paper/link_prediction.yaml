@@ -1,0 +1,22 @@
+# Tables 6 and 8: LAMP on AS-733 and Bitcoin-alpha (test F1 and AUROC, 5 runs).
+task: link_prediction
+monitor: RocAuc
+
+lamp: &lamp {name: LAMP, xi: 2.0, gamma: 0.1, mu: 1.0, activation: relu}
+seeds: &seeds [38, 1010, 2378, 4387, 347852]
+
+entries:
+  AS-733:
+    dataset: As-733
+    seeds: *seeds
+    paper: {F1: [0.9620, 0.0057], RocAuc: [0.9900, 0.0022]}
+    Model: {<<: *lamp, hidden_dim: 32, L: 3, beta: -0.5, epsilon: 0.1}
+    Optimizer: {name: Adam, learning_rate: 0.01, weight_decay: 0.0001}
+    Override: {batch_size: 64}
+  Bitcoin-alpha:
+    dataset: BitcoinAlpha
+    seeds: *seeds
+    paper: {F1: [0.9371, 0.0009], RocAuc: [0.9824, 0.0003]}
+    Model: {<<: *lamp, hidden_dim: 128, L: 1, beta: 0.1, epsilon: 0.2}
+    Optimizer: {name: Adam, learning_rate: 0.01, weight_decay: 0.0001}
+    Override: {batch_size: 32}

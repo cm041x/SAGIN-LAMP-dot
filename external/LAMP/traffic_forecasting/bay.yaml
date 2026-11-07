@@ -1,0 +1,93 @@
+# @package _global_
+# PemsBay config for `run_traffic_experiment.py --dataset bay`
+
+# ----------------------------- run / engine -----------------------------
+seed: 1
+device: 1
+epochs: 300
+patience: 50
+grad_clip_val: 1
+scale_target: false
+batch_size: 32
+workers: 0
+num_threads: 1
+
+window: 12
+horizon: 12
+stride: 1
+
+tags: [pemsbay, LAMP, tsl]
+
+# Logging is disabled by default; to log to Weights & Biases replace with:
+#   logger:
+#     backend: "wandb"
+#     project: "LAMP-Traffic"
+#     offline: false
+logger: null
+
+# ----------------------------- dataset -----------------------------
+dataset:
+  name: bay
+  connectivity:
+    method: distance
+    threshold: 0.1
+    knn: null
+    include_self: false
+    force_symmetric: false
+    layout: edge_index
+  splitting:
+    val_len: 0.1
+    test_len: 0.2
+  covariates:
+    year: false
+    day: true
+    weekday: true
+    mask: false
+
+# ----------------------------- model -----------------------------
+model:
+  name: lamp
+  hparams:
+    input_window_size: 12
+    hidden_size: 512
+    step_size: 0.1
+    num_iters: null
+    activation: tanh
+    full_graph: false
+    zero_init: false
+    layer_dropout: 0.1
+
+    num_layers: 1
+    dissipation: sigmoid
+    aggregation: sum
+    gamma: 0.1
+    beta: 0.1
+    mu: 1.0
+    use_bias: true
+
+# ----------------------------- optimizer + scheduler -----------------------------
+optimizer:
+  name: Adam
+  hparams:
+    lr: 1e-4
+    weight_decay: 0.0
+
+lr_scheduler:
+  name: MultiStepLR
+  hparams:
+    gamma: 0.25
+    milestones: [ 50, 100, 150 ]
+
+# ----------------------------- hydra sweep -----------------------------
+# Set `hydra.mode: MULTIRUN` to activate the sweep defined below.
+# Set `hydra.mode: RUN` (or remove this block) for a single run.
+# `params` keys are dotted config paths; values are comma-separated
+# lists or hydra override-grammar expressions
+# (e.g. `choice(0.01, 0.05, 0.1)`, `range(64, 512, 64)`).
+#hydra:
+#  mode: MULTIRUN
+#  sweeper:
+#    params:
+#      model.hparams.step_size: 0.005, 0.01, 0.05, 0.1, 0.3, 0.5
+#      optimizer.hparams.lr: 0.0001, 0.0005, 0.001, 0.005, 0.01
+

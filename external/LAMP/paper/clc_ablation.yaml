@@ -1,0 +1,71 @@
+# Table 3: ablation of the dissipation and of the weight constraints on
+# ColoredLeafCounting (test MSE, 5 runs). Each variant starts from the LAMP
+# configuration of Tables 1 and 2 for the same setting.
+task: leaf_counting
+dataset: SpiderW5H10
+monitor: MSE
+
+lamp: &lamp {name: LAMP, hidden_dim: 32, L: 1, xi: 1.0, gamma: 0.01, epsilon: 0.1, mu: 1.0, activation: tanh}
+fixed: &fixed {dissipation: fixed}
+no_gamma: &no_gamma {dissipation: fixed, gamma: 0.0}
+no_wc: &no_wc {dissipation: fixed, gamma: 0.0, antisymmetric_weights: false}
+no_wc_beta: &no_wc_beta {dissipation: fixed, gamma: 0.0, antisymmetric_weights: false, beta: 0.0}
+fixed_seeds: &fixed_seeds [10, 91, 901, 9001, 90001]
+ablation_seeds: &ablation_seeds [1, 2, 3, 4, 5]
+
+T200_K1: &T200_K1
+  setting: {T: 200, num_colors: 1}
+  Model: &T200_K1_model {<<: *lamp, beta: 1.0}
+  Optimizer: &T200_K1_optimizer {name: Adam, learning_rate: 0.001, weight_decay: 0.0001}
+  Override: &T200_K1_override {batch_size: 64}
+T400_K1: &T400_K1
+  setting: {T: 400, num_colors: 1}
+  Model: &T400_K1_model {<<: *lamp, beta: -1.0}
+  Optimizer: &T400_K1_optimizer {name: Adam, learning_rate: 0.001, weight_decay: 0.0001}
+  Override: &T400_K1_override {batch_size: 32}
+T600_K1: &T600_K1
+  setting: {T: 600, num_colors: 1}
+  Model: &T600_K1_model {<<: *lamp, beta: 1.0}
+  Optimizer: &T600_K1_optimizer {name: Adam, learning_rate: 0.01, weight_decay: 0.0001}
+  Override: &T600_K1_override {batch_size: 128}
+T200_K3: &T200_K3
+  setting: {T: 200, num_colors: 3}
+  Model: &T200_K3_model {<<: *lamp, beta: 0.1}
+  Optimizer: &T200_K3_optimizer {name: Adam, learning_rate: 0.001, weight_decay: 0.0001}
+  Override: &T200_K3_override {batch_size: 64}
+T400_K3: &T400_K3
+  setting: {T: 400, num_colors: 3}
+  Model: &T400_K3_model {<<: *lamp, beta: -1.0}
+  Optimizer: &T400_K3_optimizer {name: Adam, learning_rate: 0.01, weight_decay: 0.0001}
+  Override: &T400_K3_override {batch_size: 64}
+T600_K3: &T600_K3
+  setting: {T: 600, num_colors: 3}
+  Model: &T600_K3_model {<<: *lamp, beta: 0.1}
+  Optimizer: &T600_K3_optimizer {name: Adam, learning_rate: 0.001, weight_decay: 0.0001}
+  Override: &T600_K3_override {batch_size: 128}
+
+entries:
+  T200_K1/fixed: {<<: *T200_K1, seeds: *fixed_seeds, paper: {MSE: [0.421, 0.063]}, Model: {<<: [*fixed, *T200_K1_model]}}
+  T200_K1/gamma_0: {<<: *T200_K1, seeds: *ablation_seeds, paper: {MSE: [0.438, 0.054]}, Model: {<<: [*no_gamma, *T200_K1_model]}}
+  T200_K1/no_wc: {<<: *T200_K1, seeds: *ablation_seeds, paper: {MSE: [0.848, 0.017]}, Model: {<<: [*no_wc, *T200_K1_model]}}
+  T200_K1/no_wc_beta_0: {<<: *T200_K1, seeds: *ablation_seeds, paper: {MSE: [0.847, 0.018]}, Model: {<<: [*no_wc_beta, *T200_K1_model]}}
+  T400_K1/fixed: {<<: *T400_K1, seeds: *fixed_seeds, paper: {MSE: [0.432, 0.105]}, Model: {<<: [*fixed, *T400_K1_model]}}
+  T400_K1/gamma_0: {<<: *T400_K1, seeds: *ablation_seeds, paper: {MSE: [0.438, 0.091]}, Model: {<<: [*no_gamma, *T400_K1_model]}}
+  T400_K1/no_wc: {<<: *T400_K1, seeds: *ablation_seeds, paper: {MSE: [0.797, 0.003]}, Model: {<<: [*no_wc, *T400_K1_model]}}
+  T400_K1/no_wc_beta_0: {<<: *T400_K1, seeds: *ablation_seeds, paper: {MSE: [0.793, 0.009]}, Model: {<<: [*no_wc_beta, *T400_K1_model]}}
+  T600_K1/fixed: {<<: *T600_K1, seeds: *fixed_seeds, paper: {MSE: [1.135, 0.239]}, Model: {<<: [*fixed, *T600_K1_model]}}
+  T600_K1/gamma_0: {<<: *T600_K1, seeds: *ablation_seeds, paper: {MSE: [0.983, 0.422]}, Model: {<<: [*no_gamma, *T600_K1_model]}}
+  T600_K1/no_wc: {<<: *T600_K1, seeds: *ablation_seeds, paper: {MSE: [1.373, 0.000]}, Model: {<<: [*no_wc, *T600_K1_model]}}
+  T600_K1/no_wc_beta_0: {<<: *T600_K1, seeds: *ablation_seeds, paper: {MSE: [1.373, 0.001]}, Model: {<<: [*no_wc_beta, *T600_K1_model]}}
+  T200_K3/fixed: {<<: *T200_K3, seeds: *fixed_seeds, paper: {MSE: [0.065, 0.030]}, Model: {<<: [*fixed, *T200_K3_model]}}
+  T200_K3/gamma_0: {<<: *T200_K3, seeds: *ablation_seeds, paper: {MSE: [0.051, 0.008]}, Model: {<<: [*no_gamma, *T200_K3_model]}}
+  T200_K3/no_wc: {<<: *T200_K3, seeds: *ablation_seeds, paper: {MSE: [1.327, 0.020]}, Model: {<<: [*no_wc, *T200_K3_model]}}
+  T200_K3/no_wc_beta_0: {<<: *T200_K3, seeds: *ablation_seeds, paper: {MSE: [1.330, 0.021]}, Model: {<<: [*no_wc_beta, *T200_K3_model]}}
+  T400_K3/fixed: {<<: *T400_K3, seeds: *fixed_seeds, paper: {MSE: [0.523, 0.291]}, Model: {<<: [*fixed, *T400_K3_model]}}
+  T400_K3/gamma_0: {<<: *T400_K3, seeds: *ablation_seeds, paper: {MSE: [0.520, 0.145]}, Model: {<<: [*no_gamma, *T400_K3_model]}}
+  T400_K3/no_wc: {<<: *T400_K3, seeds: *ablation_seeds, paper: {MSE: [1.071, 0.017]}, Model: {<<: [*no_wc, *T400_K3_model]}}
+  T400_K3/no_wc_beta_0: {<<: *T400_K3, seeds: *ablation_seeds, paper: {MSE: [1.053, 0.026]}, Model: {<<: [*no_wc_beta, *T400_K3_model]}}
+  T600_K3/fixed: {<<: *T600_K3, seeds: *fixed_seeds, paper: {MSE: [0.235, 0.080]}, Model: {<<: [*fixed, *T600_K3_model]}}
+  T600_K3/gamma_0: {<<: *T600_K3, seeds: *ablation_seeds, paper: {MSE: [0.212, 0.064]}, Model: {<<: [*no_gamma, *T600_K3_model]}}
+  T600_K3/no_wc: {<<: *T600_K3, seeds: *ablation_seeds, paper: {MSE: [0.650, 0.257]}, Model: {<<: [*no_wc, *T600_K3_model]}}
+  T600_K3/no_wc_beta_0: {<<: *T600_K3, seeds: *ablation_seeds, paper: {MSE: [0.718, 0.178]}, Model: {<<: [*no_wc_beta, *T600_K3_model]}}

@@ -1,0 +1,21 @@
+{
+  "seed": 3001,
+  "episodes": 20,
+  "max_steps": 200,
+  "warmup_episodes": 2,
+  "updates_per_episode": 20,
+  "unroll_length": 16,
+  "sequence_batch_size": 4,
+  "learning_rate": 0.0003,
+  "gamma": 0.99,
+  "tau": 0.005,
+  "alpha": 0.01,
+  "temperature_mode": "fixed",
+  "variants": [
+    "gcn_context",
+    "lamp_plain",
+    "lamp_lifecycle",
+    "lamp_lifecycle_ecc"
+  ],
+  "code_fingerprint": "bf0d2d442831c0477670041260f9d4aa5f6e5119392525552d20d04655648cbf"
+}

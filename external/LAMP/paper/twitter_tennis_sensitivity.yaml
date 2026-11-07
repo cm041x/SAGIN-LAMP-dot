@@ -1,0 +1,28 @@
+# Table 9: test MSE of LAMP on Twitter Tennis when one of epsilon, L and beta
+# varies and the others stay at their best values (epsilon 0.1, L 8, beta -1).
+# Single runs with the model-selection seed.
+task: node_prediction
+dataset: TwitterTennis
+monitor: MSE
+
+best: &best {name: LAMP, hidden_dim: 128, L: 8, xi: 2.0, beta: -1.0, gamma: 0.01, epsilon: 0.1, mu: 1.0, activation: tanh}
+run: &run
+  seeds: [42]
+  Optimizer: {name: Adam, learning_rate: 0.0007, weight_decay: 0.0001}
+  Override: {batch_size: 32}
+
+entries:
+  epsilon=0.01: {<<: *run, paper: {MSE: [0.3003, null]}, Model: {<<: *best, epsilon: 0.01}}
+  epsilon=0.1: {<<: *run, paper: {MSE: [0.2985, null]}, Model: {<<: *best, epsilon: 0.1}}
+  epsilon=0.5: {<<: *run, paper: {MSE: [0.3415, null]}, Model: {<<: *best, epsilon: 0.5}}
+  epsilon=1.0: {<<: *run, paper: {MSE: [0.3359, null]}, Model: {<<: *best, epsilon: 1.0}}
+  L=1: {<<: *run, paper: {MSE: [0.3065, null]}, Model: {<<: *best, L: 1}}
+  L=2: {<<: *run, paper: {MSE: [0.3033, null]}, Model: {<<: *best, L: 2}}
+  L=4: {<<: *run, paper: {MSE: [0.3035, null]}, Model: {<<: *best, L: 4}}
+  L=8: {<<: *run, paper: {MSE: [0.2985, null]}, Model: {<<: *best, L: 8}}
+  L=16: {<<: *run, paper: {MSE: [0.2995, null]}, Model: {<<: *best, L: 16}}
+  beta=-1.0: {<<: *run, paper: {MSE: [0.2985, null]}, Model: {<<: *best, beta: -1.0}}
+  beta=-0.1: {<<: *run, paper: {MSE: [0.3036, null]}, Model: {<<: *best, beta: -0.1}}
+  beta=0.0: {<<: *run, paper: {MSE: [0.3072, null]}, Model: {<<: *best, beta: 0.0}}
+  beta=0.1: {<<: *run, paper: {MSE: [0.3026, null]}, Model: {<<: *best, beta: 0.1}}
+  beta=1.0: {<<: *run, paper: {MSE: [0.3005, null]}, Model: {<<: *best, beta: 1.0}}

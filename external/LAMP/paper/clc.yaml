@@ -1,0 +1,50 @@
+# Tables 1 and 2: LAMP on ColoredLeafCounting (test MSE, 5 runs).
+task: leaf_counting
+dataset: SpiderW5H10
+monitor: MSE
+
+lamp: &lamp {name: LAMP, hidden_dim: 32, L: 1, xi: 1.0, gamma: 0.01, epsilon: 0.1, mu: 1.0, activation: tanh}
+
+entries:
+  T200_K1:
+    setting: {T: 200, num_colors: 1}
+    seeds: [9, 90, 900, 9000, 90000]
+    paper: {MSE: [0.467, 0.083]}
+    Model: {<<: *lamp, beta: 1.0}
+    Optimizer: {name: Adam, learning_rate: 0.001, weight_decay: 0.0001}
+    Override: {batch_size: 64}
+  T400_K1:
+    setting: {T: 400, num_colors: 1}
+    seeds: [9, 90, 900, 9000, 90000]
+    paper: {MSE: [0.394, 0.130]}
+    Model: {<<: *lamp, beta: -1.0}
+    Optimizer: {name: Adam, learning_rate: 0.001, weight_decay: 0.0001}
+    Override: {batch_size: 32}
+  T600_K1:
+    setting: {T: 600, num_colors: 1}
+    seeds: [10, 900, 673482, 987654, 3498877478]
+    paper: {MSE: [0.831, 0.136]}
+    Model: {<<: *lamp, beta: 1.0}
+    Optimizer: {name: Adam, learning_rate: 0.01, weight_decay: 0.0001}
+    Override: {batch_size: 128}
+  T200_K3:
+    setting: {T: 200, num_colors: 3}
+    seeds: [10, 91, 901, 9001, 90001]
+    paper: {MSE: [0.057, 0.015]}
+    Model: {<<: *lamp, beta: 0.1}
+    Optimizer: {name: Adam, learning_rate: 0.001, weight_decay: 0.0001}
+    Override: {batch_size: 64}
+  T400_K3:
+    setting: {T: 400, num_colors: 3}
+    seeds: [91, 901, 2468, 9001, 56473829]
+    paper: {MSE: [0.264, 0.199]}
+    Model: {<<: *lamp, beta: -1.0}
+    Optimizer: {name: Adam, learning_rate: 0.01, weight_decay: 0.0001}
+    Override: {batch_size: 64}
+  T600_K3:
+    setting: {T: 600, num_colors: 3}
+    seeds: [10, 91, 901, 9001, 90001]
+    paper: {MSE: [0.223, 0.071]}
+    Model: {<<: *lamp, beta: 0.1}
+    Optimizer: {name: Adam, learning_rate: 0.001, weight_decay: 0.0001}
+    Override: {batch_size: 128}

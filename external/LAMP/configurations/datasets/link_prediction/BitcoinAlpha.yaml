@@ -1,0 +1,13 @@
+name: bitcoin-alpha
+
+default:
+  seed: 23745869
+  criterion: BinaryClassificationLoss
+  epochs: 1000
+  patience: 50
+  min_delta: 0.0001
+  N_REINIT: 5
+  batch_size: 64
+  metrics:
+    - F1
+    - RocAuc

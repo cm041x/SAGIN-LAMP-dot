@@ -1,0 +1,30 @@
+# Table 4: LAMP on Wikipedia Math, Twitter Tennis and ChickenPox Hungary
+# (test MSE, 10 runs).
+task: node_prediction
+monitor: MSE
+
+lamp: &lamp {name: LAMP, xi: 2.0, gamma: 0.01, mu: 1.0, activation: tanh}
+seeds: &seeds [11, 22, 33, 44, 55, 66, 121, 1331, 14641, 161051]
+
+entries:
+  WikiMath:
+    dataset: WikiMat
+    seeds: *seeds
+    paper: {MSE: [0.444, 0.003]}
+    Model: {<<: *lamp, hidden_dim: 64, L: 3, beta: 0.1, epsilon: 0.1}
+    Optimizer: {name: Adam, learning_rate: 0.001, weight_decay: 0.0001}
+    Override: {batch_size: 16}
+  TwitterTennis:
+    dataset: TwitterTennis
+    seeds: *seeds
+    paper: {MSE: [0.304, 0.001]}
+    Model: {<<: *lamp, hidden_dim: 128, L: 3, beta: -1.0, epsilon: 0.15}
+    Optimizer: {name: Adam, learning_rate: 0.0007, weight_decay: 0.0001}
+    Override: {batch_size: 32}
+  ChickenPox:
+    dataset: ChickenPox
+    seeds: *seeds
+    paper: {MSE: [0.748, 0.006]}
+    Model: {<<: *lamp, hidden_dim: 32, L: 1, beta: 0.1, epsilon: 0.1}
+    Optimizer: {name: Adam, learning_rate: 0.01, weight_decay: 0.0001}
+    Override: {batch_size: 16}

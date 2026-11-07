@@ -1,0 +1,384 @@
+{
+  "source": "/Volumes/czn/Paper/SAGIN/Multi-UAV-Search-SAGIN-DynamicFleet-Charging",
+  "destination": "/Volumes/czn/Paper/SAGIN/Multi-UAV-Search-SAGIN-LAMP",
+  "source_head": "e4a5c58cef474751a414de60ecb7fc61593beabf",
+  "copied_at": "2026-11-05T20:27:27+08:00",
+  "files": [
+    {
+      "path": "Our_experiment/GA/GA_Optimal_population_testing_0.py",
+      "sha256": "8e52968c05b0e9bad68ebed55022639f18bc7f36b2034a14d7ed23e3df28fbcf"
+    },
+    {
+      "path": "Our_experiment/GA/GA_vis_offloading_seed_executor_range.py",
+      "sha256": "99eb6c81bef38e0ec880035ce77d02909dba6b224bdec147773870c29bc86e6c"
+    },
+    {
+      "path": "Our_experiment/GA/GA_vis_offloading_visit_combined.py",
+      "sha256": "39fd0843bca38e9f24138a6002f7a66f8362b00e1250349388a4199acbbdf16e"
+    },
+    {
+      "path": "Our_experiment/GA/GA_vis_offloading_visit_frequency_by_wind_class.py",
+      "sha256": "5769685a9d51ace26b166ca16241dadd683792e69177785f540f215e098e7e06"
+    },
+    {
+      "path": "Our_experiment/GA/GA_without_Optimal_population_testing_0.py",
+      "sha256": "914d53fe8f2cd2add790c55f742943cec8b02afad1ac100fb4d8687ca3d83460"
+    },
+    {
+      "path": "Our_experiment/GA/PickleTA.py",
+      "sha256": "c1180c0198fe96f6d6854c6702f249bba4893dcb6f412c7c6498d65c10c96a59"
+    },
+    {
+      "path": "Our_experiment/GA/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Our_experiment/GA/compare_ga_algorithms_by_wind.py",
+      "sha256": "19e243212586871ee861a6db20ff7a76397146c9c8049ec545796afc341f40de"
+    },
+    {
+      "path": "Our_experiment/GA/compare_ga_algorithms_by_wind_supplement.py",
+      "sha256": "e30db661b004c9d21c0d0a2dc2ee861d40467b1d8ab3e724183ad691b90ef473"
+    },
+    {
+      "path": "Our_experiment/GA/compare_uav_count_three_groups.py",
+      "sha256": "e3ddd606102789f185527cc16f131fc45f677af40af5ad1d4165c3a0e135dc5e"
+    },
+    {
+      "path": "Our_experiment/GA/data/ga_best_deployment_random10_w23_g10_i999999_pool0_200.json",
+      "sha256": "9ba11b2d07343f378c9fd5dd020984d651035c9ad49ac088b0ee28de4bbaec8a"
+    },
+    {
+      "path": "Our_experiment/GA/ga_deployment_seed_search.py",
+      "sha256": "afd427844c6439158d55b5f9dff8488372e787bfa056bf78d151c76ca336cd48"
+    },
+    {
+      "path": "Our_experiment/GA/ga_deployment_seed_search_2.py",
+      "sha256": "baf6a5d8c66abb87ec23ff8056bb70ebcb83ee98612612445d2642380b8a6b1b"
+    },
+    {
+      "path": "Our_experiment/GA/ga_deployment_seed_search_2_coverage_convergence.py",
+      "sha256": "ce6137c7bdff553e73378a2c5bdcb6adfe4aebcc927e7be725ba947894fd5d72"
+    },
+    {
+      "path": "Our_experiment/GA/ga_deployment_seed_search_2_no_offloading.py",
+      "sha256": "44bdda211f9fab472b1c7bb5e297ce328822f414be2f9d93e603d454be41c178"
+    },
+    {
+      "path": "Our_experiment/GA/ga_deployment_seed_search_2_rule_based_offloading.py",
+      "sha256": "2a361eb15fd18a2ade6985ccfd28b8e01487d401435f2b33c5733c6ee570abb8"
+    },
+    {
+      "path": "Our_experiment/GA/ga_deployment_seed_search_2_rule_based_offloading_2.py",
+      "sha256": "3a35d995a7795607336ea2aad34d8af7c99f337f0cf20ccd8988e7ad7e1022a9"
+    },
+    {
+      "path": "Our_experiment/GA/ga_vis_common.py",
+      "sha256": "fbaf0edb4b4d14ba3bea37d5addf5c0b6ab7ac36bf2fca01715fe76b9e1ed247"
+    },
+    {
+      "path": "Our_experiment/GA/print_ga_algorithm_comparison_table.py",
+      "sha256": "6d81f222954b88581ef65b42737057905986088204853c9ebb0c3eb8de047ba2"
+    },
+    {
+      "path": "Our_experiment/GA/replot_uav_count_coverage_large_font.py",
+      "sha256": "7dff36dac2766de264040ce6ddb6886b5eeb9b6173abba959c82bb7239d2313e"
+    },
+    {
+      "path": "Our_experiment/GA/vis_offloading_seed_executor_range.py",
+      "sha256": "49fae872abd5641be8ad09e3c8d7621f214fdb3727a6e5e7ddf8f1def76a0140"
+    },
+    {
+      "path": "Our_experiment/GA/vis_offloading_visit_frequency_by_wind_class.py",
+      "sha256": "f59a0a23fec1d859c6c50a5e95651854fdcdb8a4370941e6123ff0972ad5558e"
+    },
+    {
+      "path": "Our_experiment/HCSAC/ENV/UAVenv_DynamicFleet.py",
+      "sha256": "e525faada584989d4cdb9c13b8478371ebf640d0baf4b6ea20b1d6ae191eda65"
+    },
+    {
+      "path": "Our_experiment/HCSAC/ENV/UAVenv_DynamicFleetV1.py",
+      "sha256": "b897da42775ffef30be4ef8a0f1890b1536b87fb40eaae6a2bae12b0e042516a"
+    },
+    {
+      "path": "Our_experiment/HCSAC/ENV/UAVenv_DynamicFleetV15.py",
+      "sha256": "b40d0bb3e5f5e4b6b991b675de34d853965b4815d2c1c0872f9241222640e0ce"
+    },
+    {
+      "path": "Our_experiment/HCSAC/ENV/UAVenv_SAC_Original.py",
+      "sha256": "12ec3bb6b171442d3963c0266936d79a11cc51fcf88d8e85d738d54ca25d7419"
+    },
+    {
+      "path": "Our_experiment/HCSAC/ENV/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Our_experiment/HCSAC/ENV/dist/UAVenv_SAC.py",
+      "sha256": "9f554afcc1327f6bd43bf3042ccbfca0fa836b5949cc18d9c1ed3e1c281ce23c"
+    },
+    {
+      "path": "Our_experiment/HCSAC/ENV/dist/pyarmor_runtime_000000/__init__.py",
+      "sha256": "7ed4b96be7b779d82e3e7fd3229989bcd693e5d22ed051c21343a2bb3d1f02b6"
+    },
+    {
+      "path": "Our_experiment/HCSAC/ENV/fleet_scheduler.py",
+      "sha256": "029ff3b28c9d6df54b6e64cf5e108426a3f3382535ffda3be547b6ec76c5f209"
+    },
+    {
+      "path": "Our_experiment/HCSAC/ENV/handover_policy.py",
+      "sha256": "105698e2d32dc33136a09ad347f801b012e5250ce7f9ecc781d24a191d00f4b8"
+    },
+    {
+      "path": "Our_experiment/HCSAC/HCSAC_compare_metrics_by_wind.py",
+      "sha256": "b3e9f5c1f03ee62484185b4c34cbd5c1743f32372508e608d5b102c20732aea6"
+    },
+    {
+      "path": "Our_experiment/HCSAC/HCSAC_vis_offloading_seed_executor_range.py",
+      "sha256": "bcef19f757e5b481b4d36dcf203db2a803524e47a9dcff11d7cf4fc2e5399516"
+    },
+    {
+      "path": "Our_experiment/HCSAC/HCSAC_vis_offloading_visit_frequency_by_wind_class.py",
+      "sha256": "4800acafaa02a5da568b824bafdd73dcbcd4c576823ae762ffacf793cb4d0561"
+    },
+    {
+      "path": "Our_experiment/HCSAC/Our_experiment/HCSAC/data/wind_seed_classes_5000.json",
+      "sha256": "28c236da73aa98e2d308667fcff0bc383e7059af5c63f2ae5bad5a0585367e23"
+    },
+    {
+      "path": "Our_experiment/HCSAC/UAV_SAVE.py",
+      "sha256": "622c4f7767c8f07734ac2d236647aa3cf74a789372e22fcb602bfbd86c79d61c"
+    },
+    {
+      "path": "Our_experiment/HCSAC/UAV_VIS.py",
+      "sha256": "471e4acc9367434f0573cfa447c73d92a226d6a3d25d7faaceb49d39eed9ff78"
+    },
+    {
+      "path": "Our_experiment/HCSAC/UAV_VIS_offloading.py",
+      "sha256": "df9e693e0424ea28157bb3d3d3a6d8a5a446beaf44d0277d588556ffdd151c39"
+    },
+    {
+      "path": "Our_experiment/HCSAC/UAV_VIS_offloading_2.py",
+      "sha256": "b3accc31e8caa7262882b7fda7a8dd998b507051ea66362abb93b3af19851045"
+    },
+    {
+      "path": "Our_experiment/HCSAC/UAV_VIS_without_offloading.py",
+      "sha256": "284b3129919431a25d4f2563e13c1bfeae7a33013acaf160e7f84bee1fe4cf14"
+    },
+    {
+      "path": "Our_experiment/HCSAC/UAVenv.py",
+      "sha256": "733bfd5bea5cdff76cf465dc9fa5c0a1998085b96dc228a2e30ab9940bfa625a"
+    },
+    {
+      "path": "Our_experiment/HCSAC/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Our_experiment/HCSAC/analyze_dynamic_fleet_v1.py",
+      "sha256": "b8270071e57dc6190fe024d843c7a8a1c2193c59c29c819e13f403e0997124dc"
+    },
+    {
+      "path": "Our_experiment/HCSAC/analyze_dynamic_fleet_v15.py",
+      "sha256": "ddf2385969b856480fb61182956995c8c741a03e630588d7b8e56c04562da84b"
+    },
+    {
+      "path": "Our_experiment/HCSAC/analyze_dynamic_fleet_v15_capacity.py",
+      "sha256": "57a5f2fb9e11265379b5a25afd194a73f68832657a6ae930b4e6c9006357ae15"
+    },
+    {
+      "path": "Our_experiment/HCSAC/analyze_dynamic_fleet_v15_handover.py",
+      "sha256": "9386818e3c15db4ce6c19d1d5b71e2221c19b00c34e5f6f9b91a6d7a63db7b24"
+    },
+    {
+      "path": "Our_experiment/HCSAC/analyze_dynamic_hcsac.py",
+      "sha256": "ca0dd82f8e33258b120032caf49d5e901230846bea8f6512093aa5356927da44"
+    },
+    {
+      "path": "Our_experiment/HCSAC/audit_dynamic_fleet_v1.py",
+      "sha256": "28219bce2516f7ee44fb68378a1ca14f51c8547a6e83ddc28ad2cfa2a53eed62"
+    },
+    {
+      "path": "Our_experiment/HCSAC/audit_dynamic_fleet_v15.py",
+      "sha256": "790e418297fe97310c50830bbac963fd35b4efc1766ecde342364a0b44bdd7d3"
+    },
+    {
+      "path": "Our_experiment/HCSAC/audit_dynamic_hcsac.py",
+      "sha256": "07e52b358668a68f8dc401a00829b934cab8f8b8c53187baddbaff6415655b8a"
+    },
+    {
+      "path": "Our_experiment/HCSAC/data/sac_model_fly.pt",
+      "sha256": "1f05d4b0e2877b6f42fa12251b80d4d2b2944a90d857aeb9789177fd2106a996"
+    },
+    {
+      "path": "Our_experiment/HCSAC/data/sac_model_offload.pt",
+      "sha256": "58ee602faecd02bd820cc25af5343cfea30f34d9c417823f72047a88c07a4832"
+    },
+    {
+      "path": "Our_experiment/HCSAC/dynamic_fleet_pretrained_test.py",
+      "sha256": "f6f6363c24b144c2a69a9eb83c4512129bbd964af8fa4d015cb9ef80b25519f5"
+    },
+    {
+      "path": "Our_experiment/HCSAC/dynamic_fleet_smoke_test.py",
+      "sha256": "57f50b7dc933ff41d2d3dded1da9a6416d5c7bb0b4fe30ebe9aee1cc16ae5125"
+    },
+    {
+      "path": "Our_experiment/HCSAC/dynamic_fleet_v15_capacity_experiment.py",
+      "sha256": "85c997213f644d30c6f2006f0d60359b3ab2b0dc24d3275316614bedd4a42fe7"
+    },
+    {
+      "path": "Our_experiment/HCSAC/dynamic_fleet_v15_experiment.py",
+      "sha256": "5dc3524866a320d028e29751fe61ee479b0f3270a5e16acaa5839f9af980c243"
+    },
+    {
+      "path": "Our_experiment/HCSAC/dynamic_fleet_v15_handover_experiment.py",
+      "sha256": "2ff83e05e8ff2449b00154be60d224d48269cad6ddf29c0b88c8a511c7e78aa6"
+    },
+    {
+      "path": "Our_experiment/HCSAC/dynamic_fleet_v15_metrics.py",
+      "sha256": "fe21621b49dde9f8be2d0d63d3ce9b966c2b8f094664084bcdf2a080ade8a5f1"
+    },
+    {
+      "path": "Our_experiment/HCSAC/dynamic_fleet_v1_experiment.py",
+      "sha256": "0fa5ef9f51f8b0a1d70e189b24e26182456088bce8cfafa26066ec7004e9c2cc"
+    },
+    {
+      "path": "Our_experiment/HCSAC/evaluate_dynamic_hcsac.py",
+      "sha256": "fe3f0db751e180c3f378cf853031b21416fc338eafaffca94e79a54ef0978fe1"
+    },
+    {
+      "path": "Our_experiment/HCSAC/fleet_metrics.py",
+      "sha256": "b0573d94c8455eee7e56b0b673062a9f57870101d76aaf2fe0f3ae74e568d7b6"
+    },
+    {
+      "path": "Our_experiment/HCSAC/train_dynamic_hcsac.py",
+      "sha256": "53bded1335f2a1731268fdd0b844558c559e8a9c71a745555cb085f795bef4f5"
+    },
+    {
+      "path": "Our_experiment/HCSAC/training/__init__.py",
+      "sha256": "19f8556fa8caecdb003c1a49fa02c53de8f05b8ce1caf93bed239d13e0f32ab5"
+    },
+    {
+      "path": "Our_experiment/HCSAC/training/checkpointing.py",
+      "sha256": "e0cf5e3a2c5dd0d6490646ba263779b40512b30d8321c5bf8135fdcde407c432"
+    },
+    {
+      "path": "Our_experiment/HCSAC/training/dynamic_hcsac_trainer.py",
+      "sha256": "99cf48f7f29e539b80cf10b80cefbf22d6a94a7c65f827482427eb13de452e6d"
+    },
+    {
+      "path": "Our_experiment/HCSAC/training/masked_discrete_sac.py",
+      "sha256": "2311cb37803cae8d77d5aedb9b45f8d69f096a742cbd0824b68c3b0a8e08973d"
+    },
+    {
+      "path": "Our_experiment/HCSAC/training/replay_buffers.py",
+      "sha256": "f7ccc8d65d8879aeafbb09d3e5cd3e9f8d04e7020434a92c45a833af495c1e53"
+    },
+    {
+      "path": "Our_experiment/HCSAC/training/training_split.py",
+      "sha256": "12784ef60167150cc40737619159475dca0c63965900086f101addd32b75a29f"
+    },
+    {
+      "path": "Our_experiment/HCSAC/vis_offloading_seed_executor.py",
+      "sha256": "d8c1fb4a242ec9879836987e9b2f3baaa04da8a369d1ddf496487acb0d540447"
+    },
+    {
+      "path": "Our_experiment/HCSAC/vis_offloading_seed_executor_range.py",
+      "sha256": "b7e2ad63a74628c89ea4721023c85db2f991a14410aa8734331f6ece56cfdfd2"
+    },
+    {
+      "path": "Our_experiment/HCSAC/vis_offloading_seed_search.py",
+      "sha256": "2e739bf7fce3d515150248fbedfa268339462a9698891326c311a6e688b3a258"
+    },
+    {
+      "path": "Our_experiment/HCSAC/vis_offloading_testing.py",
+      "sha256": "5209b7de502d8541f2cf39a68f7da3666f1a89e9718d75909fa1930c798ea875"
+    },
+    {
+      "path": "Our_experiment/HCSAC/vis_offloading_testing2.py",
+      "sha256": "d2ab4167c0da5babcc3f68673e10824457f775d3e3f87ef55940d86b13e130cf"
+    },
+    {
+      "path": "Our_experiment/HCSAC/vis_offloading_testing3.py",
+      "sha256": "b5e90a347a5abba75984bc08be7b69a8bb2c9a136f380080c9c4c5cac1e887e0"
+    },
+    {
+      "path": "Our_experiment/HCSAC/vis_offloading_visit_frequency_by_wind_class.py",
+      "sha256": "cc25df63bb81d90428b414c73f54a0e21d2d7a90934245d9b5c475189c03d7c1"
+    },
+    {
+      "path": "Our_experiment/HCSAC/vis_wind_field_from_catalog.py",
+      "sha256": "79643ff7e30917ceb9a8a9ba975e67973dad0ecb0247198c5b24e8a60b8d3c25"
+    },
+    {
+      "path": "Our_experiment/HCSAC/vis_wind_seed_direction_contrast.py",
+      "sha256": "9270bd27216921efb93f945b6e268dbf29b37e89d79d957677ceef3312770840"
+    },
+    {
+      "path": "Our_experiment/HCSAC/vis_without_offloading_testing.py",
+      "sha256": "3c393a60ad0a7d4a5de158ce63e3bb9537db53d79c0cb68e47f2c4e30f1752af"
+    },
+    {
+      "path": "Our_experiment/HCSAC/wind.json",
+      "sha256": "9d7f06c8cc32d1b4c9903240ffa2466fcc1c57a1eca38d88a12b7a1668039331"
+    },
+    {
+      "path": "Our_experiment/HCSAC/wind.py",
+      "sha256": "b7e9a1e4cc5daff3072a1e7946382e3be6d9ae662534e3ec5b11f1a284ab5fa8"
+    },
+    {
+      "path": "Our_experiment/HCSAC/wind_seed_catalog_builder.py",
+      "sha256": "0b934d9a41ecda5f90058b3fbceb3a844f22fc6866adcac30dd5eefd0e586e81"
+    },
+    {
+      "path": "Our_experiment/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "baseline_check.py",
+      "sha256": "e6993d98c3f847b3baa970d6c04f5ca716d3cc0ce98666e5b89f6f89ceacacc1"
+    },
+    {
+      "path": "map/map_generation.py",
+      "sha256": "7ae2194264c523fed98368acfe99e3d98cd449785e88381f603b73e2340fdf73"
+    },
+    {
+      "path": "plot.py",
+      "sha256": "bc80adf19be45614b8a17fd9075a73f23de409562339cccecda7a3c587a93061"
+    },
+    {
+      "path": "preliminary_experiment/Improved_experiment/UAV_SAVE.py",
+      "sha256": "941ade1c6295ca2d9d29a9f3b3485575d46a6149b796349b8ffe0b88b99e14f6"
+    },
+    {
+      "path": "preliminary_experiment/Improved_experiment/UAV_VIS.py",
+      "sha256": "78d639690bb95d8dea9b80f27a98d85ecece053bf38ce00a20056f1e25900b06"
+    },
+    {
+      "path": "preliminary_experiment/Improved_experiment/UAVenv.py",
+      "sha256": "ffa046a89fbab4611687445c9ab1ddc543b7acb47b1fdd7b139e3be4c43b4a5f"
+    },
+    {
+      "path": "preliminary_experiment/Reproduce_experiments_from_other_papers/DQN.py",
+      "sha256": "3e28db6e42ad2434a583ab67b9dd3a41f9a48c633ad40e4dabd36636f5b2241a"
+    },
+    {
+      "path": "preliminary_experiment/Reproduce_experiments_from_other_papers/UAVenv.py",
+      "sha256": "2c35fbc15acc1c1ad613c7facc9bd2d1fcc29958c06a16f46380e57708c23a0c"
+    },
+    {
+      "path": "tests/test_dynamic_fleet.py",
+      "sha256": "bb8a396d108e3b610e92ed47818fefc9aecc5cf8f5ce5b35f2717b7adf293228"
+    },
+    {
+      "path": "tests/test_dynamic_fleet_v1.py",
+      "sha256": "088d3b4d967517020e5273a17d1cf2d20e96e48368868f08ac77d9b5d6f96a04"
+    },
+    {
+      "path": "tests/test_dynamic_fleet_v15.py",
+      "sha256": "02b73363c9c483576240fa0763072d0b837877996e0b2f73727992dac6701abb"
+    },
+    {
+      "path": "tests/test_dynamic_hcsac_training.py",
+      "sha256": "64eaec384b9f9fbf86780e24a37c9a2099944466bbd34a15e6464732b9bc2c12"
+    }
+  ]
+}

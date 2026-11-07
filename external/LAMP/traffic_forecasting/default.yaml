@@ -1,0 +1,80 @@
+# @package _global_
+# Self-contained config for `run_traffic_experiment.py` — PemsBay, TemporalTSWANModel.
+# Run with:
+#   python run_traffic_experiment.py
+
+# ----------------------------- run / engine -----------------------------
+seed: 1
+device: 1                # int -> Trainer(devices=cfg.device)
+epochs: 300
+patience: 50
+grad_clip_val: 1
+scale_target: false
+batch_size: 32
+workers: 0
+
+window: 12
+horizon: 12
+stride: 1
+
+tags: [pemsbay, lamp, tsl]
+
+# Logger (set to null to disable, or fill in for wandb / neptune / tensorboard)
+logger:
+  backend: "wandb"
+  project: "LAMP-Traffic"
+  offline: false
+
+# ----------------------------- dataset -----------------------------
+dataset:
+  name: bay
+
+  # Forwarded to dataset.get_connectivity(...)
+  connectivity:
+    method: distance
+    threshold: 0.1
+    knn: null
+    include_self: false
+    force_symmetric: false
+    layout: edge_index
+
+  # Forwarded to dataset.get_splitter(...)
+  splitting:
+    val_len: 0.1
+    test_len: 0.2
+
+
+# ----------------------------- model -----------------------------
+model:
+  name: lamp
+  hparams:
+    # Core temporal / architectural
+    input_window_size: 12
+    hidden_size: 16
+    step_size: 0.1          # epsilon for the discretization
+    num_iters: null         # null -> input_window_size + horizon
+    share_layers: true      # required (only branch implemented)
+    activation: relu
+    full_graph: false
+    zero_init: false
+    layer_norm: true
+    preprocess_norm: false
+    layer_dropout: 0.1
+
+    # TSWANConv-specific
+    dissipation: sigmoid
+    aggregation: sum
+    gamma: 0.1
+    beta: -0.5
+    mu: 1.0
+    conv: simple_antisym
+    discretization_method: forward_euler
+
+# ----------------------------- optimizer + scheduler -----------------------------
+optimizer:
+  name: Adam
+  hparams:
+    lr: 3.0e-3
+    weight_decay: 0.0
+
+lr_scheduler: null

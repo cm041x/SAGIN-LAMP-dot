@@ -1,0 +1,29 @@
+{
+  "variants": [
+    "gcn_flight_residual",
+    "lamp_plain_flight_residual",
+    "lamp_lifecycle_flight_residual",
+    "lamp_lifecycle_ecc_flight_residual"
+  ],
+  "train_seed": 3001,
+  "episodes": 20,
+  "max_steps": 200,
+  "warmup_episodes": 2,
+  "updates_per_episode": 20,
+  "unroll_length": 16,
+  "sequence_batch_size": 4,
+  "actor_lr": 0.0003,
+  "critic_lr": 0.0003,
+  "gamma": 0.99,
+  "tau": 0.005,
+  "temperature_mode": "fixed",
+  "alpha": 0.01,
+  "fixed_offload": "HAPS",
+  "decision_time": "pre_flight",
+  "task_feature_refresh": false,
+  "training_fingerprint": "018677b0841944577d94ae1e5749d5119c99611bcf847b27815f4add06aaf8f2",
+  "cnn_sha256": "1f05d4b0e2877b6f42fa12251b80d4d2b2944a90d857aeb9789177fd2106a996",
+  "wind_sha256": "9d7f06c8cc32d1b4c9903240ffa2466fcc1c57a1eca38d88a12b7a1668039331",
+  "catalog_sha256": "28c236da73aa98e2d308667fcff0bc383e7059af5c63f2ae5bad5a0585367e23",
+  "ga_sha256": "9ba11b2d07343f378c9fd5dd020984d651035c9ad49ac088b0ee28de4bbaec8a"
+}

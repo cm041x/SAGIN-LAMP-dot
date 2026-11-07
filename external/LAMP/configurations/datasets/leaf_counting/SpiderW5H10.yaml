@@ -1,0 +1,19 @@
+name: SpiderW5H10
+
+# CLC settings: the (T x num_colors) grid maps to the six published Hugging Face
+# settings T={200,400,600}-{BinaryColor(K=1),ThreeColors(K=3)}. The spider-tree
+# topology (W=5 branches of length H=10) and emission probabilities are fixed by
+# the published data (spider.pt / data.pt) and are not configured here.
+T: [200, 400, 600]
+num_colors: [1, 3]
+
+default:
+  seed: 90
+  criterion: MSE
+  epochs: 250
+  patience: 50
+  min_delta: 0.0001
+  batch_size: 64
+  N_REINIT: 5
+  metrics:
+    - MSE
