@@ -1,0 +1,17 @@
+{
+  "frozen_before_rollouts": true,
+  "protocol_deviation": "Earlier runs had a charging-readiness bug and their inspected scenarios are preserved in results/availability_gap/pre_full_charge_fix. New confirmation winds and terrain seeds below were selected without inspecting any outcome for them, after excluding earlier confirmation winds, all prior validation/test winds and the previous 20-episode training winds.",
+  "development": [
+    {"wind_class":"Low Wind","wind_seed":1180,"terrain_seed":900000,"infra_seed":900000},
+    {"wind_class":"Moderate Wind","wind_seed":2080,"terrain_seed":900021,"infra_seed":900021},
+    {"wind_class":"Strong Wind","wind_seed":118,"terrain_seed":900042,"infra_seed":900042}
+  ],
+  "confirmation_generator": "deterministic seed 20261109; two new wind seeds per class from the existing catalog after documented exclusions, two new terrain/infrastructure seeds per wind",
+  "confirmation_winds": {"Low Wind":[262,1047],"Moderate Wind":[1910,3116],"Strong Wind":[850,3863]},
+  "confirmation_terrain_infrastructure_seeds": [63001,63002],
+  "policies": ["p0_frozen_cnn","p1_current_coordination","p2_predicted_availability"],
+  "nominal_initial_energy_ratios": [1,1,1,1,1,1],
+  "max_steps": 500,
+  "planner": {"horizon":30,"max_candidates":96,"forecast_weight":4.0,"spatial_scale":5.0,"energy_weight":0.1},
+  "offload_followup_rule": "Only after frozen HAPS confirmation: if P1-P0 mean coverage AUC >=0.01 and P1 wins >=8/12 matched cases, re-evaluate all three policies on the same confirmation cases using the unchanged pretrained state-dependent GCN offloader. Report selected targets. No retuning."
+}

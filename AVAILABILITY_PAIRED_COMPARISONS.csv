@@ -1,0 +1,81 @@
+control,wind_class,comparison,metric,n_pairs,mean_difference,median_difference,positive,ties,negative
+fixed_haps,All,p1_current_coordination - p0_frozen_cnn,coverage_auc,12,0.08612166666666667,0.08448749999999994,12,0,0
+fixed_haps,All,p1_current_coordination - p0_frozen_cnn,final_coverage,12,0.10166666666666667,0.10000000000000003,12,0,0
+fixed_haps,All,p1_current_coordination - p0_frozen_cnn,repeated_visit_ratio,12,-0.04457765845321867,-0.04476780480458448,0,0,12
+fixed_haps,All,p1_current_coordination - p0_frozen_cnn,integrated_fleet_deficit,12,63.75,68.0,9,0,3
+fixed_haps,All,p1_current_coordination - p0_frozen_cnn,total_uav_energy_j,12,136117.57958079237,147907.20646488294,11,0,1
+fixed_haps,All,p2_predicted_availability - p1_current_coordination,coverage_auc,12,-0.017522500000000014,-0.011922500000000169,0,0,12
+fixed_haps,All,p2_predicted_availability - p1_current_coordination,final_coverage,12,-0.008958333333333327,0.0,0,7,5
+fixed_haps,All,p2_predicted_availability - p1_current_coordination,repeated_visit_ratio,12,-0.004408334179438496,-0.007777955424521532,3,0,9
+fixed_haps,All,p2_predicted_availability - p1_current_coordination,integrated_fleet_deficit,12,37.416666666666664,41.0,10,0,2
+fixed_haps,All,p2_predicted_availability - p1_current_coordination,total_uav_energy_j,12,60464.96663784577,58560.72062056884,11,0,1
+fixed_haps,Low Wind,p1_current_coordination - p0_frozen_cnn,coverage_auc,4,0.06340875000000004,0.058865,4,0,0
+fixed_haps,Low Wind,p1_current_coordination - p0_frozen_cnn,final_coverage,4,0.06875000000000003,0.06125000000000003,4,0,0
+fixed_haps,Low Wind,p1_current_coordination - p0_frozen_cnn,repeated_visit_ratio,4,-0.06448154445097623,-0.061932920075676134,0,0,4
+fixed_haps,Low Wind,p1_current_coordination - p0_frozen_cnn,integrated_fleet_deficit,4,160.25,180.0,4,0,0
+fixed_haps,Low Wind,p1_current_coordination - p0_frozen_cnn,total_uav_energy_j,4,164982.6644637892,159426.04030536767,4,0,0
+fixed_haps,Low Wind,p2_predicted_availability - p1_current_coordination,coverage_auc,4,-0.010186250000000063,-0.007955000000000156,0,0,4
+fixed_haps,Low Wind,p2_predicted_availability - p1_current_coordination,final_coverage,4,-0.0050000000000000044,-0.0012500000000000289,0,2,2
+fixed_haps,Low Wind,p2_predicted_availability - p1_current_coordination,repeated_visit_ratio,4,-0.0010592187574981204,-0.0013512860473825494,2,0,2
+fixed_haps,Low Wind,p2_predicted_availability - p1_current_coordination,integrated_fleet_deficit,4,8.75,7.5,2,0,2
+fixed_haps,Low Wind,p2_predicted_availability - p1_current_coordination,total_uav_energy_j,4,49825.36569482274,35433.6358967321,4,0,0
+fixed_haps,Moderate Wind,p1_current_coordination - p0_frozen_cnn,coverage_auc,4,0.07275000000000004,0.08064749999999998,4,0,0
+fixed_haps,Moderate Wind,p1_current_coordination - p0_frozen_cnn,final_coverage,4,0.08499999999999999,0.09625,4,0,0
+fixed_haps,Moderate Wind,p1_current_coordination - p0_frozen_cnn,repeated_visit_ratio,4,-0.02650923770932373,-0.023183505752967792,0,0,4
+fixed_haps,Moderate Wind,p1_current_coordination - p0_frozen_cnn,integrated_fleet_deficit,4,4.5,4.5,2,0,2
+fixed_haps,Moderate Wind,p1_current_coordination - p0_frozen_cnn,total_uav_energy_j,4,121131.17560308008,117771.30424245913,4,0,0
+fixed_haps,Moderate Wind,p2_predicted_availability - p1_current_coordination,coverage_auc,4,-0.018477500000000008,-0.009702500000000003,0,0,4
+fixed_haps,Moderate Wind,p2_predicted_availability - p1_current_coordination,final_coverage,4,-0.013124999999999998,0.0,0,3,1
+fixed_haps,Moderate Wind,p2_predicted_availability - p1_current_coordination,repeated_visit_ratio,4,-0.0030931604225366005,-0.005297615364706576,1,0,3
+fixed_haps,Moderate Wind,p2_predicted_availability - p1_current_coordination,integrated_fleet_deficit,4,35.75,41.0,4,0,0
+fixed_haps,Moderate Wind,p2_predicted_availability - p1_current_coordination,total_uav_energy_j,4,105312.17380215367,101275.8880715752,4,0,0
+fixed_haps,Strong Wind,p1_current_coordination - p0_frozen_cnn,coverage_auc,4,0.1222062499999999,0.1298974999999999,4,0,0
+fixed_haps,Strong Wind,p1_current_coordination - p0_frozen_cnn,final_coverage,4,0.15125,0.16125,4,0,0
+fixed_haps,Strong Wind,p1_current_coordination - p0_frozen_cnn,repeated_visit_ratio,4,-0.04274219319935604,-0.04043881434560587,0,0,4
+fixed_haps,Strong Wind,p1_current_coordination - p0_frozen_cnn,integrated_fleet_deficit,4,26.5,20.5,3,0,1
+fixed_haps,Strong Wind,p1_current_coordination - p0_frozen_cnn,total_uav_energy_j,4,122238.89867550787,140970.16264411435,3,0,1
+fixed_haps,Strong Wind,p2_predicted_availability - p1_current_coordination,coverage_auc,4,-0.023903749999999974,-0.021222499999999977,0,0,4
+fixed_haps,Strong Wind,p2_predicted_availability - p1_current_coordination,final_coverage,4,-0.00874999999999998,-0.0037499999999999756,0,2,2
+fixed_haps,Strong Wind,p2_predicted_availability - p1_current_coordination,repeated_visit_ratio,4,-0.009072623358280768,-0.008373014684064872,0,0,4
+fixed_haps,Strong Wind,p2_predicted_availability - p1_current_coordination,integrated_fleet_deficit,4,67.75,66.0,4,0,0
+fixed_haps,Strong Wind,p2_predicted_availability - p1_current_coordination,total_uav_energy_j,4,26257.3604165609,45760.728471342474,3,0,1
+pretrained_gcn,All,p1_current_coordination - p0_frozen_cnn,coverage_auc,12,0.09383333333333332,0.10259499999999988,12,0,0
+pretrained_gcn,All,p1_current_coordination - p0_frozen_cnn,final_coverage,12,0.11625,0.12624999999999997,12,0,0
+pretrained_gcn,All,p1_current_coordination - p0_frozen_cnn,repeated_visit_ratio,12,-0.05733791724190021,-0.054234681475414104,0,0,12
+pretrained_gcn,All,p1_current_coordination - p0_frozen_cnn,integrated_fleet_deficit,12,98.25,111.5,11,0,1
+pretrained_gcn,All,p1_current_coordination - p0_frozen_cnn,total_uav_energy_j,12,220553.79258686132,198082.59467694256,12,0,0
+pretrained_gcn,All,p2_predicted_availability - p1_current_coordination,coverage_auc,12,-0.02224958333333325,-0.01341500000000001,0,0,12
+pretrained_gcn,All,p2_predicted_availability - p1_current_coordination,final_coverage,12,-0.016666666666666653,-0.004999999999999949,0,3,9
+pretrained_gcn,All,p2_predicted_availability - p1_current_coordination,repeated_visit_ratio,12,-0.0026097603562801976,-0.003874497942427446,3,0,9
+pretrained_gcn,All,p2_predicted_availability - p1_current_coordination,integrated_fleet_deficit,12,36.75,34.0,11,0,1
+pretrained_gcn,All,p2_predicted_availability - p1_current_coordination,total_uav_energy_j,12,52063.718053007346,55872.239565927535,10,0,2
+pretrained_gcn,Low Wind,p1_current_coordination - p0_frozen_cnn,coverage_auc,4,0.07426749999999996,0.07585999999999993,4,0,0
+pretrained_gcn,Low Wind,p1_current_coordination - p0_frozen_cnn,final_coverage,4,0.09312500000000001,0.09750000000000003,4,0,0
+pretrained_gcn,Low Wind,p1_current_coordination - p0_frozen_cnn,repeated_visit_ratio,4,-0.06482953539624994,-0.05679840837151434,0,0,4
+pretrained_gcn,Low Wind,p1_current_coordination - p0_frozen_cnn,integrated_fleet_deficit,4,126.25,146.5,4,0,0
+pretrained_gcn,Low Wind,p1_current_coordination - p0_frozen_cnn,total_uav_energy_j,4,323449.55648539495,341497.2204896575,4,0,0
+pretrained_gcn,Low Wind,p2_predicted_availability - p1_current_coordination,coverage_auc,4,-0.016243749999999946,-0.016049999999999898,0,0,4
+pretrained_gcn,Low Wind,p2_predicted_availability - p1_current_coordination,final_coverage,4,-0.013749999999999984,-0.013749999999999984,0,0,4
+pretrained_gcn,Low Wind,p2_predicted_availability - p1_current_coordination,repeated_visit_ratio,4,-0.005992513496999363,-0.005794968873870543,1,0,3
+pretrained_gcn,Low Wind,p2_predicted_availability - p1_current_coordination,integrated_fleet_deficit,4,33.0,34.0,4,0,0
+pretrained_gcn,Low Wind,p2_predicted_availability - p1_current_coordination,total_uav_energy_j,4,30129.8717887355,22600.921344133094,2,0,2
+pretrained_gcn,Moderate Wind,p1_current_coordination - p0_frozen_cnn,coverage_auc,4,0.11047875000000007,0.13248249999999995,4,0,0
+pretrained_gcn,Moderate Wind,p1_current_coordination - p0_frozen_cnn,final_coverage,4,0.13875,0.17125,4,0,0
+pretrained_gcn,Moderate Wind,p1_current_coordination - p0_frozen_cnn,repeated_visit_ratio,4,-0.06663850643224789,-0.07194107353799734,0,0,4
+pretrained_gcn,Moderate Wind,p1_current_coordination - p0_frozen_cnn,integrated_fleet_deficit,4,122.75,125.0,4,0,0
+pretrained_gcn,Moderate Wind,p1_current_coordination - p0_frozen_cnn,total_uav_energy_j,4,181396.1426907871,196895.87798311096,4,0,0
+pretrained_gcn,Moderate Wind,p2_predicted_availability - p1_current_coordination,coverage_auc,4,-0.02843499999999982,-0.011474999999999902,0,0,4
+pretrained_gcn,Moderate Wind,p2_predicted_availability - p1_current_coordination,final_coverage,4,-0.026874999999999982,-0.0024999999999999467,0,1,3
+pretrained_gcn,Moderate Wind,p2_predicted_availability - p1_current_coordination,repeated_visit_ratio,4,0.006829761707838,-0.00012055794682164223,2,0,2
+pretrained_gcn,Moderate Wind,p2_predicted_availability - p1_current_coordination,integrated_fleet_deficit,4,9.75,9.0,3,0,1
+pretrained_gcn,Moderate Wind,p2_predicted_availability - p1_current_coordination,total_uav_energy_j,4,104976.9725975371,109421.61847555265,4,0,0
+pretrained_gcn,Strong Wind,p1_current_coordination - p0_frozen_cnn,coverage_auc,4,0.09675374999999994,0.09348499999999993,4,0,0
+pretrained_gcn,Strong Wind,p1_current_coordination - p0_frozen_cnn,final_coverage,4,0.116875,0.11375000000000002,4,0,0
+pretrained_gcn,Strong Wind,p1_current_coordination - p0_frozen_cnn,repeated_visit_ratio,4,-0.0405457098972028,-0.039726462781897565,0,0,4
+pretrained_gcn,Strong Wind,p1_current_coordination - p0_frozen_cnn,integrated_fleet_deficit,4,45.75,45.0,3,0,1
+pretrained_gcn,Strong Wind,p1_current_coordination - p0_frozen_cnn,total_uav_energy_j,4,156815.67858440196,166602.0079389941,4,0,0
+pretrained_gcn,Strong Wind,p2_predicted_availability - p1_current_coordination,coverage_auc,4,-0.02206999999999998,-0.015325000000000033,0,0,4
+pretrained_gcn,Strong Wind,p2_predicted_availability - p1_current_coordination,final_coverage,4,-0.009374999999999994,-0.0012499999999999734,0,2,2
+pretrained_gcn,Strong Wind,p2_predicted_availability - p1_current_coordination,repeated_visit_ratio,4,-0.00866652927967923,-0.008864778489261538,0,0,4
+pretrained_gcn,Strong Wind,p2_predicted_availability - p1_current_coordination,integrated_fleet_deficit,4,67.5,66.5,4,0,0
+pretrained_gcn,Strong Wind,p2_predicted_availability - p1_current_coordination,total_uav_energy_j,4,21084.30977274943,17483.57499427907,4,0,0
