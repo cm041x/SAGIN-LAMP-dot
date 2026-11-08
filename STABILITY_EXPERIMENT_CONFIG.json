@@ -1,0 +1,171 @@
+{
+  "train_seed": 3001,
+  "episodes": 10,
+  "max_episode_steps": 500,
+  "updates_per_episode": 20,
+  "critic_warm_start_episodes": 2,
+  "critic_warm_start_updates": 20,
+  "held_out_training_episodes": 1,
+  "unroll_length": 16,
+  "sequence_batch_size": 4,
+  "actor_lr": 0.0003,
+  "critic_lr": 0.0003,
+  "gamma": 0.99,
+  "tau": 0.005,
+  "alpha": 0.01,
+  "temperature_mode": "fixed",
+  "residual_mode": "bounded",
+  "residual_bound": 1.0,
+  "input_layernorm": true,
+  "readout_layernorm": true,
+  "xi": 2.0,
+  "kl_probe_steps": [
+    1,
+    6,
+    11,
+    16
+  ],
+  "kl_limit": 0.01,
+  "kl_max_attempts": 3,
+  "kl_retry_scale": 0.5,
+  "collapse_rule": {
+    "window_last_steps": 100,
+    "dominant_action_fraction_min": 0.9,
+    "coverage_shortfall_min": 0.2,
+    "minimum_scenarios": 2
+  },
+  "validation_scenarios": [
+    {
+      "wind_class": "Low Wind",
+      "wind_seed": 1180,
+      "terrain_seed": 900000,
+      "infra_seed": 900000
+    },
+    {
+      "wind_class": "Moderate Wind",
+      "wind_seed": 2080,
+      "terrain_seed": 900021,
+      "infra_seed": 900021
+    },
+    {
+      "wind_class": "Strong Wind",
+      "wind_seed": 118,
+      "terrain_seed": 900042,
+      "infra_seed": 900042
+    }
+  ],
+  "test_scenarios": [
+    {
+      "wind_seed": 11,
+      "terrain_seed": 42,
+      "infra_seed": 42
+    },
+    {
+      "wind_seed": 23,
+      "terrain_seed": 42,
+      "infra_seed": 42
+    },
+    {
+      "wind_seed": 4800,
+      "terrain_seed": 42,
+      "infra_seed": 42
+    }
+  ],
+  "training_manifest": [
+    {
+      "episode": 1,
+      "wind_class": "Low Wind",
+      "wind_seed": 1691,
+      "terrain_seed": 565694,
+      "infra_seed": 252874
+    },
+    {
+      "episode": 2,
+      "wind_class": "Moderate Wind",
+      "wind_seed": 2250,
+      "terrain_seed": 354610,
+      "infra_seed": 396723
+    },
+    {
+      "episode": 3,
+      "wind_class": "Strong Wind",
+      "wind_seed": 2190,
+      "terrain_seed": 448456,
+      "infra_seed": 598954
+    },
+    {
+      "episode": 4,
+      "wind_class": "Low Wind",
+      "wind_seed": 1643,
+      "terrain_seed": 503429,
+      "infra_seed": 732137
+    },
+    {
+      "episode": 5,
+      "wind_class": "Moderate Wind",
+      "wind_seed": 3951,
+      "terrain_seed": 486864,
+      "infra_seed": 321871
+    },
+    {
+      "episode": 6,
+      "wind_class": "Strong Wind",
+      "wind_seed": 560,
+      "terrain_seed": 727538,
+      "infra_seed": 781329
+    },
+    {
+      "episode": 7,
+      "wind_class": "Low Wind",
+      "wind_seed": 165,
+      "terrain_seed": 635474,
+      "infra_seed": 124734
+    },
+    {
+      "episode": 8,
+      "wind_class": "Moderate Wind",
+      "wind_seed": 2796,
+      "terrain_seed": 564546,
+      "infra_seed": 288242
+    },
+    {
+      "episode": 9,
+      "wind_class": "Strong Wind",
+      "wind_seed": 1597,
+      "terrain_seed": 530136,
+      "infra_seed": 572913
+    },
+    {
+      "episode": 10,
+      "wind_class": "Low Wind",
+      "wind_seed": 2513,
+      "terrain_seed": 116033,
+      "infra_seed": 456525
+    }
+  ],
+  "warm_scenarios": [
+    {
+      "episode": 11,
+      "wind_class": "Moderate Wind",
+      "wind_seed": 3105,
+      "terrain_seed": 307879,
+      "infra_seed": 450522
+    },
+    {
+      "episode": 12,
+      "wind_class": "Strong Wind",
+      "wind_seed": 1603,
+      "terrain_seed": 476310,
+      "infra_seed": 273572
+    }
+  ],
+  "heldout_training_scenario": {
+    "episode": 13,
+    "wind_class": "Low Wind",
+    "wind_seed": 2230,
+    "terrain_seed": 543278,
+    "infra_seed": 733914
+  },
+  "source_fingerprint": "db40ae8382315392ccc4c30fec70593ddaa15f540ead540329abd22063c43b78",
+  "cnn_sha256": "1f05d4b0e2877b6f42fa12251b80d4d2b2944a90d857aeb9789177fd2106a996"
+}

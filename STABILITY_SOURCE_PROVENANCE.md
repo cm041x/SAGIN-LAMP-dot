@@ -1,0 +1,3 @@
+# Stability source provenance
+
+Source project commit: `d17382c123eb32fa811e78e9e159936d766e9bc3`. This publication branch is a separately committed snapshot based on the public `45093e` source snapshot; its publication commit is distinct from the source commit. The source modules, test, run scripts and `STABILITY_DIAGNOSIS.md` were copied from `d17382c`. The accompanying configuration and aggregate validation/test data were copied from the completed stability experiment. Original training checkpoints, replay and full trajectories are not included. The public README still describes the earlier 45093e base snapshot; consult this file and the stability diagnosis for this branch.
